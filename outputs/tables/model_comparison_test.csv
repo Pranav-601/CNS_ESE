@@ -1,0 +1,5 @@
+Model,Accuracy,Precision (Attack),Recall (Attack),F1-Score,ROC-AUC,False Alarm Rate (FPR),Miss Rate (FNR),Training Time (s),Inference Time (ms)
+Proposed MLP (Custom LR Decay),0.8221,0.969,0.7102,0.8196,0.8603,0.0301,0.2898,51.6,48.53
+Ablation MLP (Fixed LR 0.001),0.7728,0.9565,0.6295,0.7593,0.8505,0.0378,0.3705,52.41,43.39
+Baseline (Logistic Regression),0.7532,0.9177,0.6223,0.7417,0.7962,0.0737,0.3777,1.37,23.3
+Baseline (Decision Tree),0.7819,0.9669,0.6387,0.7693,0.7592,0.0289,0.3613,0.62,26.16

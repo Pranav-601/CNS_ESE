@@ -1,0 +1,106 @@
+{
+  "schema_version": 2,
+  "dataset_name": "NSL-KDD",
+  "release_id": "nsl-kdd-binary-common-v1",
+  "created_at_utc": "2026-10-27T12:24:10.851370+00:00",
+  "target": "binary",
+  "class_order": [
+    0,
+    1
+  ],
+  "class_names": [
+    "Normal",
+    "Attack"
+  ],
+  "representation": "canonical_csv_unencoded_unscaled",
+  "config": {
+    "dataset_name": "NSL-KDD",
+    "release_id": "nsl-kdd-binary-common-v1",
+    "target": "binary",
+    "sources": {
+      "development": {
+        "path": "DATASET/KDDTrain+.txt",
+        "sha256": "1b86d2f957b33082081bba410fe129b475efebcc13c9014c3f447c8271aadf95"
+      },
+      "test": {
+        "path": "DATASET/KDDTest+.txt",
+        "sha256": "fa46b0935342616aa83b7c2578db355b6a7aaabbc492248172c7a1e8b7ab8f84"
+      }
+    },
+    "population_policy": "preserve_official_rows_flag_feature_duplicates",
+    "development_folds": 5,
+    "validation_fold": 0,
+    "seed": 42,
+    "agreement_note": "User corrected the required dataset to supplied NSL-KDD and requested a replacement common release. Preserve original benchmark train/test; derive validation only from training; keep difficulty as metadata.",
+    "expected_counts": {
+      "source_rows": 148517,
+      "retained_rows": 148517,
+      "excluded_rows": 0,
+      "source_counts": {
+        "development": 125973,
+        "test": 22544
+      },
+      "partitions": {
+        "train": 100779,
+        "validation": 25194,
+        "test": 22544
+      },
+      "partition_class_counts": {
+        "train": {
+          "0": 53875,
+          "1": 46904
+        },
+        "validation": {
+          "0": 13468,
+          "1": 11726
+        },
+        "test": {
+          "0": 9711,
+          "1": 12833
+        }
+      },
+      "official_test_rows_overlapping_development_features": 664
+    }
+  },
+  "source_files": {
+    "development": {
+      "path": "DATASET/KDDTrain+.txt",
+      "sha256": "1b86d2f957b33082081bba410fe129b475efebcc13c9014c3f447c8271aadf95"
+    },
+    "test": {
+      "path": "DATASET/KDDTest+.txt",
+      "sha256": "fa46b0935342616aa83b7c2578db355b6a7aaabbc492248172c7a1e8b7ab8f84"
+    }
+  },
+  "prepare_seconds": 52.11112540005706,
+  "environment": {
+    "python": "3.11.9",
+    "platform": "Windows-10-10.0.26200-SP0",
+    "processor": "Intel64 Family 6 Model 191 Stepping 2, GenuineIntel",
+    "logical_cpus": 24,
+    "physical_ram_bytes": 16873545728,
+    "packages": {
+      "numpy": "2.4.3",
+      "pandas": "3.0.2",
+      "scipy": "1.17.1",
+      "scikit-learn": "1.8.0",
+      "lightgbm": "4.7.0",
+      "matplotlib": "3.10.8",
+      "joblib": "1.4.2"
+    }
+  },
+  "files": {
+    "config.json": "611d942f2d240171bd704a3ec6de6aac89866b8ee520c2b237bff1864c2a21d1",
+    "label_map.json": "2314b57c22d7303e9958939d2ba6fe3a8c783ae70d6c44cdc93671084cd020de",
+    "membership.csv": "588854c29b644daef86b8dac7ee4bf89c9c736d670bf01a9a8e50f5f9f5aea6c",
+    "quality_report.json": "880cedc90311613d5a791934ecd97c44e90329003f477335d9618f0635ec849d",
+    "README.md": "7c1a54f8c292c286c2b6736a6547cbc55ee4d22b69f7dd2d019ec8df4adb959e",
+    "schema.json": "a4f28bfbc6cfdcb15a453758d3f952b6ff818f75b29d4202d0283a8c80600db8",
+    "test_features.csv": "dd2e0008ee42ed53177d0a0f573311fb18fc0a8f69ade2972ad335f245e0fc39",
+    "test_labels.csv": "b5610ae3338323d24db54149eceb66dd7ac9918cab242cfa50f282848eac4925",
+    "train_features.csv": "4addeb73f033b2ea11ff424724bf66e65431a5d5d18b3d647031d8419dd8eaa9",
+    "train_labels.csv": "08f1f1815b57fc3087ef9ac200ab3e4cfe4228cbc722cf3260c9d571a6238539",
+    "validation_features.csv": "aaf3cd35c57d35522602f05bdd4e801894f160b9256e9e5bce825a11ff0e7217",
+    "validation_labels.csv": "362c287d113af4082ec21b526534fe9ecc57aef8923c1ddefbba70b56348adde"
+  }
+}

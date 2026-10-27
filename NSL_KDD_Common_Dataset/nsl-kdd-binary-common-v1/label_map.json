@@ -1,0 +1,52 @@
+{
+  "class_order": [
+    0,
+    1
+  ],
+  "class_names": [
+    "Normal",
+    "Attack"
+  ],
+  "source_label_to_target": {
+    "apache2": 1,
+    "back": 1,
+    "buffer_overflow": 1,
+    "ftp_write": 1,
+    "guess_passwd": 1,
+    "httptunnel": 1,
+    "imap": 1,
+    "ipsweep": 1,
+    "land": 1,
+    "loadmodule": 1,
+    "mailbomb": 1,
+    "mscan": 1,
+    "multihop": 1,
+    "named": 1,
+    "neptune": 1,
+    "nmap": 1,
+    "normal": 0,
+    "perl": 1,
+    "phf": 1,
+    "pod": 1,
+    "portsweep": 1,
+    "processtable": 1,
+    "ps": 1,
+    "rootkit": 1,
+    "saint": 1,
+    "satan": 1,
+    "sendmail": 1,
+    "smurf": 1,
+    "snmpgetattack": 1,
+    "snmpguess": 1,
+    "spy": 1,
+    "sqlattack": 1,
+    "teardrop": 1,
+    "udpstorm": 1,
+    "warezclient": 1,
+    "warezmaster": 1,
+    "worm": 1,
+    "xlock": 1,
+    "xsnoop": 1,
+    "xterm": 1
+  }
+}

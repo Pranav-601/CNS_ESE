@@ -1,0 +1,174 @@
+[
+  {
+    "model_name": "Proposed MLP (Custom LR Decay)",
+    "accuracy": 0.8220812633073101,
+    "precision": 0.9689559855411439,
+    "recall": 0.7102002649419465,
+    "f1_score": 0.8196411709159585,
+    "roc_auc": 0.8602817442156722,
+    "false_positive_rate": 0.030068993924415612,
+    "false_negative_rate": 0.28979973505805345,
+    "true_negatives": 9419,
+    "false_positives": 292,
+    "false_negatives": 3719,
+    "true_positives": 9114,
+    "classification_report": {
+      "Normal": {
+        "precision": 0.7169279951286345,
+        "recall": 0.9699310060755844,
+        "f1-score": 0.8244562125257123,
+        "support": 9711.0
+      },
+      "Attack": {
+        "precision": 0.9689559855411439,
+        "recall": 0.7102002649419465,
+        "f1-score": 0.8196411709159585,
+        "support": 12833.0
+      },
+      "accuracy": 0.8220812633073101,
+      "macro avg": {
+        "precision": 0.8429419903348891,
+        "recall": 0.8400656355087655,
+        "f1-score": 0.8220486917208354,
+        "support": 22544.0
+      },
+      "weighted avg": {
+        "precision": 0.8603930058172317,
+        "recall": 0.8220812633073101,
+        "f1-score": 0.8217152868258378,
+        "support": 22544.0
+      }
+    },
+    "training_time_sec": 51.604034662246704,
+    "inference_time_ms": 48.534393310546875
+  },
+  {
+    "model_name": "Ablation MLP (Fixed LR 0.001)",
+    "accuracy": 0.7727998580553584,
+    "precision": 0.956542332741267,
+    "recall": 0.6294708953479311,
+    "f1_score": 0.7592818873954319,
+    "roc_auc": 0.8504704891331426,
+    "false_positive_rate": 0.037792194418700444,
+    "false_negative_rate": 0.3705291046520689,
+    "true_negatives": 9344,
+    "false_positives": 367,
+    "false_negatives": 4755,
+    "true_positives": 8078,
+    "classification_report": {
+      "Normal": {
+        "precision": 0.6627420384424427,
+        "recall": 0.9622078055812996,
+        "f1-score": 0.7848803023939521,
+        "support": 9711.0
+      },
+      "Attack": {
+        "precision": 0.956542332741267,
+        "recall": 0.6294708953479311,
+        "f1-score": 0.7592818873954319,
+        "support": 12833.0
+      },
+      "accuracy": 0.7727998580553584,
+      "macro avg": {
+        "precision": 0.8096421855918549,
+        "recall": 0.7958393504646153,
+        "f1-score": 0.772081094894692,
+        "support": 22544.0
+      },
+      "weighted avg": {
+        "precision": 0.8299856144155092,
+        "recall": 0.7727998580553584,
+        "f1-score": 0.7703085999597784,
+        "support": 22544.0
+      }
+    },
+    "training_time_sec": 52.40591859817505,
+    "inference_time_ms": 43.387651443481445
+  },
+  {
+    "model_name": "Baseline (Logistic Regression)",
+    "accuracy": 0.7532381121362669,
+    "precision": 0.9177200643530223,
+    "recall": 0.6223018779708563,
+    "f1_score": 0.7416763408404923,
+    "roc_auc": 0.7962444017278174,
+    "false_positive_rate": 0.07373082071877253,
+    "false_negative_rate": 0.3776981220291436,
+    "true_negatives": 8995,
+    "false_positives": 716,
+    "false_negatives": 4847,
+    "true_positives": 7986,
+    "classification_report": {
+      "Normal": {
+        "precision": 0.6498338390406011,
+        "recall": 0.9262691792812274,
+        "f1-score": 0.7638092811956014,
+        "support": 9711.0
+      },
+      "Attack": {
+        "precision": 0.9177200643530223,
+        "recall": 0.6223018779708563,
+        "f1-score": 0.7416763408404923,
+        "support": 12833.0
+      },
+      "accuracy": 0.7532381121362669,
+      "macro avg": {
+        "precision": 0.7837769516968117,
+        "recall": 0.7742855286260419,
+        "f1-score": 0.7527428110180469,
+        "support": 22544.0
+      },
+      "weighted avg": {
+        "precision": 0.8023260289551816,
+        "recall": 0.7532381121362669,
+        "f1-score": 0.7512102737622658,
+        "support": 22544.0
+      }
+    },
+    "training_time_sec": 1.3691704273223877,
+    "inference_time_ms": 23.299455642700195
+  },
+  {
+    "model_name": "Baseline (Decision Tree)",
+    "accuracy": 0.7818931866572036,
+    "precision": 0.9668553904222694,
+    "recall": 0.6387438634769734,
+    "f1_score": 0.7692740838064849,
+    "roc_auc": 0.7592444477151543,
+    "false_positive_rate": 0.028936257851920503,
+    "false_negative_rate": 0.36125613652302657,
+    "true_negatives": 9430,
+    "false_positives": 281,
+    "false_negatives": 4636,
+    "true_positives": 8197,
+    "classification_report": {
+      "Normal": {
+        "precision": 0.6704109199488127,
+        "recall": 0.9710637421480794,
+        "f1-score": 0.7932035160028599,
+        "support": 9711.0
+      },
+      "Attack": {
+        "precision": 0.9668553904222694,
+        "recall": 0.6387438634769734,
+        "f1-score": 0.7692740838064849,
+        "support": 12833.0
+      },
+      "accuracy": 0.7818931866572036,
+      "macro avg": {
+        "precision": 0.818633155185541,
+        "recall": 0.8049038028125264,
+        "f1-score": 0.7812387999046724,
+        "support": 22544.0
+      },
+      "weighted avg": {
+        "precision": 0.8391596730354819,
+        "recall": 0.7818931866572036,
+        "f1-score": 0.7795818692952622,
+        "support": 22544.0
+      }
+    },
+    "training_time_sec": 0.6222021579742432,
+    "inference_time_ms": 26.155471801757812
+  }
+]

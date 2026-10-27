@@ -1,0 +1,95 @@
+{
+  "source_rows": 148517,
+  "retained_rows": 148517,
+  "excluded_rows": 0,
+  "source_counts": {
+    "development": 125973,
+    "test": 22544
+  },
+  "partitions": {
+    "train": 100779,
+    "validation": 25194,
+    "test": 22544
+  },
+  "partition_class_counts": {
+    "train": {
+      "0": 53875,
+      "1": 46904
+    },
+    "validation": {
+      "0": 13468,
+      "1": 11726
+    },
+    "test": {
+      "0": 9711,
+      "1": 12833
+    }
+  },
+  "feature_overlap": {
+    "train__validation": {
+      "feature_groups": 0,
+      "rows_in_second_partition": 0
+    },
+    "train__test": {
+      "feature_groups": 512,
+      "rows_in_second_partition": 521
+    },
+    "validation__test": {
+      "feature_groups": 142,
+      "rows_in_second_partition": 143
+    }
+  },
+  "official_test_rows_overlapping_development_features": 664,
+  "feature_duplicate_occurrences_by_source": {
+    "development": 16,
+    "test": 57
+  },
+  "binary_conflict_rows_by_source": {
+    "development": 14,
+    "test": 108
+  },
+  "test_only_attack_labels": [
+    "apache2",
+    "httptunnel",
+    "mailbomb",
+    "mscan",
+    "named",
+    "processtable",
+    "ps",
+    "saint",
+    "sendmail",
+    "snmpgetattack",
+    "snmpguess",
+    "sqlattack",
+    "udpstorm",
+    "worm",
+    "xlock",
+    "xsnoop",
+    "xterm"
+  ],
+  "unknown_categories_vs_training": {
+    "train": {
+      "protocol_type": 0,
+      "service": 0,
+      "flag": 0
+    },
+    "validation": {
+      "protocol_type": 0,
+      "service": 0,
+      "flag": 0
+    },
+    "test": {
+      "protocol_type": 0,
+      "service": 0,
+      "flag": 0
+    }
+  },
+  "constant_columns_in_development": [
+    "num_outbound_cmds"
+  ],
+  "central_fitted_transforms": [],
+  "difficulty_is_predictor": false,
+  "predictor_values_preserved": true,
+  "official_test_preserved": true,
+  "overlap_policy": "Preserve supplied train/test membership; disclose exact-feature overlap. No test-dependent row removal."
+}

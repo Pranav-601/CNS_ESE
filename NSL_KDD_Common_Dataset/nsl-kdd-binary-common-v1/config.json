@@ -1,0 +1,49 @@
+{
+  "dataset_name": "NSL-KDD",
+  "release_id": "nsl-kdd-binary-common-v1",
+  "target": "binary",
+  "sources": {
+    "development": {
+      "path": "DATASET/KDDTrain+.txt",
+      "sha256": "1b86d2f957b33082081bba410fe129b475efebcc13c9014c3f447c8271aadf95"
+    },
+    "test": {
+      "path": "DATASET/KDDTest+.txt",
+      "sha256": "fa46b0935342616aa83b7c2578db355b6a7aaabbc492248172c7a1e8b7ab8f84"
+    }
+  },
+  "population_policy": "preserve_official_rows_flag_feature_duplicates",
+  "development_folds": 5,
+  "validation_fold": 0,
+  "seed": 42,
+  "agreement_note": "User corrected the required dataset to supplied NSL-KDD and requested a replacement common release. Preserve original benchmark train/test; derive validation only from training; keep difficulty as metadata.",
+  "expected_counts": {
+    "source_rows": 148517,
+    "retained_rows": 148517,
+    "excluded_rows": 0,
+    "source_counts": {
+      "development": 125973,
+      "test": 22544
+    },
+    "partitions": {
+      "train": 100779,
+      "validation": 25194,
+      "test": 22544
+    },
+    "partition_class_counts": {
+      "train": {
+        "0": 53875,
+        "1": 46904
+      },
+      "validation": {
+        "0": 13468,
+        "1": 11726
+      },
+      "test": {
+        "0": 9711,
+        "1": 12833
+      }
+    },
+    "official_test_rows_overlapping_development_features": 664
+  }
+}
